@@ -10,8 +10,13 @@ fi
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/pi/.oh-my-zsh"
+
+# Variables for stow (dotfiles management)
 export DOTFILES="$HOME/.dotfiles"
 export STOW_FOLDERS="nvim,zsh"
+
+# Default editor
+export EDITOR='nvim'
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -95,7 +100,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
+   #export EDITOR='vim'
 # else
 #   export EDITOR='mvim'
 # fi
@@ -109,14 +114,14 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias zshconfig="nvim ~/.zshrc"
+alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias c='clear'
 alias gs='git status'
 alias ga='git add'
 alias gc='git clone'
 alias sozsh='source $HOME/.zshrc'
-alias ls='ls --color'
+alias ls='ls -la --color --group-directories-first'
 alias update='sudo apt-get update' 
 alias upgrade='sudo apt-get upgrade -y' 
 

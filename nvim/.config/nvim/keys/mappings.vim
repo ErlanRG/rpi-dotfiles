@@ -10,12 +10,13 @@ vnoremap < <gv
 vnoremap > >gv
 
 "Window navigation
-nnoremap <leader>h :wincmd h<CR>
-nnoremap <leader>j :wincmd j<CR>
-nnoremap <leader>k :wincmd k<CR>
-nnoremap <leader>l :wincmd l<CR>
+nnoremap <C-h> :wincmd h<CR>
+nnoremap <C-j> :wincmd j<CR>
+nnoremap <C-k> :wincmd k<CR>
+nnoremap <C-l> :wincmd l<CR>
 
 nnoremap <leader>u :UndotreeShow<CR> 
 nnoremap <leader>pi :PlugInstall<CR>
+nnoremap <leader>pu :PlugUpdate<CR>
 nnoremap <silent> <leader>+ :vertical resize +5<CR> 
 nnoremap <silent> <leader>- :vertical resize -5<CR> 
