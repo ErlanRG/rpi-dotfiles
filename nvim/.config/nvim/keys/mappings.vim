@@ -17,5 +17,11 @@ nnoremap <leader>l :wincmd l<CR>
 
 nnoremap <leader>u :UndotreeShow<CR> 
 nnoremap <leader>pi :PlugInstall<CR>
+nnoremap <leader>pu :PlugUpdate<CR>
+nnoremap <leader>pg :PlugUpgrade<CR>
+nnoremap <leader>so :so ~/.config/nvim/init.vim<CR>
 nnoremap <silent> <leader>+ :vertical resize +5<CR> 
 nnoremap <silent> <leader>- :vertical resize -5<CR> 
+
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
